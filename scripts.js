@@ -14,7 +14,7 @@ document.addEventListener('scroll', function() {
     });
 });
 document.addEventListener('DOMContentLoaded', function() {
-    let elements = document.querySelectorAll('.paragraph, .quote, .image');
+    let elements = document.querySelectorAll('.paragraph, .quote, .image, .horizontal-line, .horizontal-line-small');
 
     elements.forEach(function(element) {
         element.classList.add('fade');
