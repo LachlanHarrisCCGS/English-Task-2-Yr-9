@@ -85,7 +85,7 @@ header {
 
 .horizontal-line {
     border-top: 1px solid #ccc; /* Solid line with 1px thickness */
-    margin: 10px -40% 10px -40%; /* Adjust margin as needed */
+    margin: 10px -15% 10px -15%; /* Adjust margin as needed */
     height: 100px;
     transform: translateY(40%);
 }
