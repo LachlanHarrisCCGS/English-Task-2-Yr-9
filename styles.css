@@ -24,7 +24,7 @@ header {
 }
 
 .parallax {
-    background-image: url('https://www.ajc.com/resizer/FAdNNBAAntkAgRZBl5iSZNYtG_g=/1200x630/cloudfront-us-east-1.images.arcpublishing.com/ajc/5EHJBBJNJVQND3YTL3J77K4T3E.jpg');
+    background-image: linear-gradient(#12121233, #121212), url('https://www.ajc.com/resizer/FAdNNBAAntkAgRZBl5iSZNYtG_g=/1200x630/cloudfront-us-east-1.images.arcpublishing.com/ajc/5EHJBBJNJVQND3YTL3J77K4T3E.jpg');
     min-height: 300px;
     width: 100%;
     background-attachment: fixed;
@@ -37,18 +37,36 @@ header {
     position: absolute;
     z-index: 1;
     margin: 0;
-    padding: 0;
+    padding: 0 0 20px 50px;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     font-size: 5em;
     text-align: left;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     left: 20px;
     top: 80%;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
     opacity: 0;
     white-space: pre-line;
+}
+.title2 {
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    padding: 0 0 0 50px;
+    color: white;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6em;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    left: 20px;
+    top: 80%;
+    transform: translateY(-40%);
+    opacity: 0;
+    white-space: pre-line;
+
 }
 
 /* Content Styles */
