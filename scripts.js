@@ -34,18 +34,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Title Typing animation
 
-    const title = document.getElementById('title');
-    const text = title.textContent;
+    let title = document.getElementById('title');
+    let text = title.textContent;
     title.textContent = ''; // Clear the current text to start typing animation
     title.style.opacity = 1;
 
     let index = 0;
 
+    let done = false;
+
     function typeLetter() {
         if (index < text.length) {
             title.textContent += text.charAt(index);
             index++;
-            setTimeout(typeLetter, 50); // ADJUST DELAY
+            setTimeout(typeLetter, 60); // ADJUST DELAY
+        }
+        else if (!done) {
+            title = document.getElementById('title2');
+            text = title.textContent;
+            title.textContent = ''; // Clear the current text to start typing animation
+            title.style.opacity = 1;
+
+            index = 0;
+            done = true;
+            setTimeout(typeLetter, 250);
         }
     }
     typeLetter();
